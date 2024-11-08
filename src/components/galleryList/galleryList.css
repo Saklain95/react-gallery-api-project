@@ -1,0 +1,52 @@
+/* galleryList.css */
+
+.gl-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px; /* Spacing between images */
+    width: 100%;
+    max-width: 1200px; /* Maximum width for the gallery */
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Rounded corners for images */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    transition: transform 0.3s ease; /* Smooth scaling effect on hover */
+}
+
+img:hover {
+    transform: scale(1.05); /* Scale up image on hover */
+}
+
+/* Optional: Styling for GalleryDetails, if you decide to include it */
+.gallery-details {
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-details h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.gallery-details p {
+    margin: 5px 0;
+    color: #666;
+}
